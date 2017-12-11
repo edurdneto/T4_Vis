@@ -25,7 +25,7 @@ var yAxis = d3.svg.axis()
 var line = d3.svg.line()
     .interpolate("basis")
     .x(function(d) { return x(d.date); })
-    .y(function(d) { return y(d.temperature); });
+    .y(function(d) { return y(d.tweets); });
 
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -49,7 +49,7 @@ d3.tsv("../datasets/top10.tsv", function(error, data) {
     return {
       name: name,
       values: data.map(function(d) {
-        return {date: d.date, temperature: +d[name]};
+        return {date: d.date, tweets: +d[name]};
       })
     };
   });
@@ -57,8 +57,8 @@ d3.tsv("../datasets/top10.tsv", function(error, data) {
   x.domain(d3.extent(data, function(d) { return d.date; }));
 
   y.domain([
-    d3.min(cities, function(c) { return d3.min(c.values, function(v) { return v.temperature; }); }),
-    d3.max(cities, function(c) { return d3.max(c.values, function(v) { return v.temperature; }); })
+    d3.min(cities, function(c) { return d3.min(c.values, function(v) { return v.tweets; }); }),
+    d3.max(cities, function(c) { return d3.max(c.values, function(v) { return v.tweets; }); })
   ]);
   svg.selectAll("*").remove();
   //LEGEND
@@ -104,7 +104,7 @@ d3.tsv("../datasets/top10.tsv", function(error, data) {
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Temperature (ºF)");
+      .text("Número de tweets");
    
   var boo=cities.filter(function(d){return filterData[d.name]==true;});
   console.log("filter");
@@ -133,7 +133,7 @@ d3.tsv("../datasets/top10.tsv", function(error, data) {
 
   city.append("text")
       .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
-      .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.temperature) + ")"; })
+      .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.tweets) + ")"; })
       .attr("x", 3)
       .attr("dy", ".35em")
       .text(function(d) { return d.name; });
