@@ -4,7 +4,7 @@ var margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
-var parseDate = d3.time.format("%Y%m%d").parse;
+// var parseDate = d3.time.format("%Y%m%d").parse;
 
 var x = d3.time.scale()
     .range([0, width]);
@@ -35,15 +35,23 @@ var svg = d3.select("body").append("svg")
 
   
       
-var filterData={"RealMadrid":true,"NFL":true,"Palmeiras":true};//cities to be shown
+// var filterData={"RealMadrid":true,"NFL":true,"Palmeiras":true};//cities to be shown
+var filterData={"Barcelona":true,"RealMadrid":true,"NFL":true,"ChampionsLeague":true,"football":true,"NBA":true,"WorldCup":true,"RMUCL":true,"F1":true,"Italy":true};
 
 function drawChart(filterData){
-d3.tsv("../datasets/top10.tsv", function(error, data) {
+d3.csv("../datasets/top.csv", function(error, data) {
   color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
 
-  data.forEach(function(d) {
-    d.date = parseDate(d.date);
+  // data.forEach(function(d) {
+  //   d.date = parseDate(d.date);
+  // });
+
+  var dtgFormat = d3.time.format.utc("%Y-%m-%dT%H:%M:%S");
+  data.forEach(function(d){
+    d.date = dtgFormat.parse(d.date.substr(0,19));
   });
+     
+  console.log(data);
 
   var cities = color.domain().map(function(name) {
     return {
@@ -53,8 +61,10 @@ d3.tsv("../datasets/top10.tsv", function(error, data) {
       })
     };
   });
+
+  x.domain(d3.extent(data, function(d) { return d3.time.hour(d.date); }));
   
-  x.domain(d3.extent(data, function(d) { return d.date; }));
+  //x.domain(d3.extent(data, function(d) { return d.date; }));
 
   y.domain([
     d3.min(cities, function(c) { return d3.min(c.values, function(v) { return v.tweets; }); }),
@@ -136,7 +146,7 @@ d3.tsv("../datasets/top10.tsv", function(error, data) {
       .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.tweets) + ")"; })
       .attr("x", 3)
       .attr("dy", ".35em")
-      .text(function(d) { return d.name; });
+      // .text(function(d) { return d.name; });
     svg.selectAll(".city")
       .data(cities.filter(function(d){return filterData[d.name]==true;}))
       .exit()
