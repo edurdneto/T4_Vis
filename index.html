@@ -9,7 +9,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Trabalho Final - Visualização Científica</title>
+	<title>T4 - Sports</title>
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/dc.css"/>
@@ -88,16 +88,16 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li>
-						<a href="#introdução">Introdução</a>
-					</li>
-					 <li>
-						<a href="#Desafios">Desafios</a>
+						<a href="#Motivacao">Motivação</a>
 					</li>
 					<li>
-						<a href="#Tecnologias">Tecnologias</a>
+						<a href="#Hipotese">Hipótese</a>
 					</li>
 					<li>
 						<a href="#Metodologia">Metodologia</a>
+					</li>
+					<li>
+						<a href="#Tecnologias">Tecnologias</a>
 					</li>
 					<li>
 						<a href="#Top10">Top 10</a>
@@ -106,7 +106,7 @@
 						<a href="#texto-mapa">Mapa</a>
 					</li>
 					<li>
-						<a href="#Morte">Morte</a>
+						<a href="#Desafios">Desafios</a>
 					</li>
 				</ul>
 			</div>
@@ -119,9 +119,9 @@
 	<header class="header-image">
 		<div class="headline">
 			<div class="overlay">
-				<div class="container">
-					<h1 class="display-1 text-white">Twitter</h1>
-					<h2>Análise dos Trend Topics de eventos esportivos</h2>
+				<div class="container" style="color: #ffffff; ">
+					<h1 class="display-1 text-white">T4 - Sports</h1>
+					<h2>Time-based Twitter Trending Topics</h2>
 				</div>
 			</div>
 		</div>
@@ -131,22 +131,80 @@
 
 		<hr class="featurette-divider">
 
-		<div class="featurette" id="introdução">
-		<h2 class="featurette-heading">Introdução </h2>
+		<div class="featurette" id="Motivacao">
+		<h2 class="featurette-heading">Motivação </h2>
+			
 			<h3>
-			   <span class="lead">
-				O objetivo desse trabalho é fazer uma análise detalhada sobre os trending topics do twitter de eventos espertivos, que nos permitam fazer os seguintes questionamentos:
-				<ul>
-					<li>Quais os 10 mais propulares trending topics em um dado período?</li>
-					<li>Em que países mais se comenta sobre uma dada hashtag?</li>
-					<li>É possivel identificar a origem de uma hashtag?</li>
-				</ul>
+			   <span class="lead" style="font-size: 32px; ">
+			   <b>Libertadores 2017</b> <br />
+			   - Defesa de Marcelo Grohe é destaque na imprensa internacional.
+			   </span>
+			</h3>
+			<img src="../img/motivacao.jpg" style="width:100%; "/>
+
+		</div>
+
+		<hr class="featurette-divider">
+		
+		<div class="featurette" id="Hipotese">
+		<h2 class="featurette-heading">Pergunta de Partida </h2>
+			<h3> 
+			   <span class="lead" style="font-size: 40px;">
+			   <p style="margin: 180px 0 200px 0;">É possível analisar interativamente os trending topics do twitter relacionados a
+				eventos esportivos, considerando aspectos <b>temporais</b> e <b>geográficos</b>?</p>
 			   </span>
 			</h3>
 
 		</div>
 
+			<hr class="featurette-divider">
+
+		<div class="featurette" id="Metodologia">
+		<h2 class="featurette-heading">Metodologia </h2>
+			<h3>
+			   <span class="lead" style="font-size: 32px;">
+					<ul>
+						<li>Lista com 100 hashtags relacionadas a eventos esportivos <br />
+						Exemplos: <i>Football, RealMadrid, F1, Flamengo, Palmeiras, etc.</i> </li>
+						<li>Coleta de mais de 7GB de dados do twitter entre 01/nov/2017 e 10/dez/2017</li>
+						<li>Dados temporais foram implementados com base na teoria da sedimentação</li>
+
+					</ul>
+					
+					<table style="width: 100%;">
+						<tr>
+							<td>
+								<div id="ex1" style="width: 50%;"></div>
+								<script type="text/javascript" src="ex1.js"></script>
+							</td>
+						</tr>
+					</table>
+			   </span>
+			</h3>
+		</div>
+
 		<hr class="featurette-divider">
+
+		<div class="featurette" id="Tecnologias">
+			<h2 class="featurette-heading">Tecnologias </h2>
+					<table>
+						<tr>
+<!-- 							<td> -->
+<!-- 								<div id="myDemo"> -->
+<!-- 								<p style="text-align: center;">Visual Sedimentation</p> -->
+<!-- 								</div> -->
+<!-- 									<script type="text/javascript" src="helloWorld.js"></script> -->
+<!-- 							</td> -->
+							<td><img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png"></td>
+							<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTlbJyQLvpPZP4oPyrCnbxSQgszQz8CvRvj7o0e7E5B3fbnWwG"></td>
+							<td><img src="https://www.creative-tim.com/assets/icon-bootstrap-7cec419b71f47386f443bd3fbfef2f7c.jpg"></td>
+							<td><img src="http://www.webopixel.net/blog/wp-content/uploads/2014/04/d3-icon.png"></td>
+						</tr>
+					</table>
+
+		</div>
+
+	<hr class="featurette-divider">
 
 
 		<div class="featurette" id="Desafios">
@@ -161,43 +219,6 @@
 			   </span>
 			</h3>
 		</div>
-
-		<hr class="featurette-divider">
-
-		<div class="featurette" id="Metodologia">
-		<h2 class="featurette-heading">Metodologia </h2>
-			<h3>
-			   <span class="lead">
-					<ul>
-						<li>Coleta de mais de 3 gigabytes de dados do tweeter entre os dias de ...</li>
-						<li>Foram usados como filtro de pesquisa 100 hashtags de eventos espeortivos</li>
-						<li>Foram coletados mais de x hashtags no total</li>
-					</ul>
-			   </span>
-			</h3>
-		</div>
-
-		<hr class="featurette-divider">
-
-		<div class="featurette" id="Tecnologias">
-			<h2 class="featurette-heading">Tecnologias </h2>
-					<table>
-						<tr>
-							<td>
-								<div id="myDemo">
-								<p style="text-align: center;">Visual Sedimentation</p>
-								</div>
-									<script type="text/javascript" src="helloWorld.js"></script>
-							</td>
-							<td><img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png"></td>
-							<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTlbJyQLvpPZP4oPyrCnbxSQgszQz8CvRvj7o0e7E5B3fbnWwG"></td>
-							<td><img src="https://www.creative-tim.com/assets/icon-bootstrap-7cec419b71f47386f443bd3fbfef2f7c.jpg"></td>
-							<td><img src="http://www.webopixel.net/blog/wp-content/uploads/2014/04/d3-icon.png"></td>
-						</tr>
-					</table>
-
-		</div>
-
 
 	   <hr class="featurette-divider">
 

@@ -3,7 +3,7 @@ var entries, table, hashtags, a;
         var sediBarChart;
         var nb_previous_day,nb_previous_week,nb_all;
         var min_time, max_time
-        var INCREMENT_UPDATE = 1000000;
+        var INCREMENT_UPDATE = 100000;
 
         function set_current_time(t) {
             sediBarChart.selectAll().flocculate();
@@ -12,7 +12,7 @@ var entries, table, hashtags, a;
             sediBarChart.strata.update(sediBarChart);
         }
 
-        d3.xml("datasets/arq2.xml", function(xml) {
+        d3.xml("datasets/cluster.xml", function(xml) {
 
           entries = d3.select(xml).selectAll("tweet")[0];
           console.log(entries);
@@ -152,9 +152,9 @@ var entries, table, hashtags, a;
               //   _sndCollection[sound_scale(parseInt(d3.select(d).select("size")[0][0].textContent))].play();
 
               // APPEND TO LOG LIST
-              $("#logs ul").prepend(
-                $('<li style="font-size:8px; line-height:10px">').append("<span style='color:lightgray'>["+d3.select(d).select("date")[0][0].textContent+"]</span> "+d3.select(d).select("hashtag")[0][0].textContent + ": " + d3.select(d).select("msg")[0][0].textContent+"").delay(1000).fadeOut(1500, function() {})
-              );
+//              $("#logs ul").prepend(
+//                $('<li style="font-size:8px; line-height:10px">').append("<span style='color:lightgray'>["+d3.select(d).select("date")[0][0].textContent+"]</span> "+d3.select(d).select("hashtag")[0][0].textContent + ": " + d3.select(d).select("msg")[0][0].textContent+"").delay(1000).fadeOut(1500, function() {})
+//              );
 
               // HIGHLIGHT COLUMN TEXT
               d3.select(".coltext_"+cat).style("font-size", 10).transition().duration(1000).style("font-size", 10);

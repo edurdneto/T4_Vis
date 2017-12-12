@@ -12,11 +12,21 @@ body {
 	display: block;
 	width: 100%;
 	text-align: center;
-	background: url('https://www.suretybonds.org/blog/wp-content/uploads/2015/01/Twitter-Bird-new-HD-Forwallpapers.com_1-1024x576.jpg') no-repeat center center scroll;
+/* 	background: url('https://www.suretybonds.org/blog/wp-content/uploads/2015/01/Twitter-Bird-new-HD-Forwallpapers.com_1-1024x576.jpg') no-repeat center center scroll; */
+	background: url('../img/fundo.jpg') no-repeat center center scroll;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+}
+
+.motivation-image {
+	display: block;
+	width: 100%;
+	text-align: center;
+/* 	background: url('https://www.suretybonds.org/blog/wp-content/uploads/2015/01/Twitter-Bird-new-HD-Forwallpapers.com_1-1024x576.jpg') no-repeat center center scroll; */
+	background: url('../img/motivacao.jpg') no-repeat center center scroll;
+
 }
 
 .headline>.overlay {
@@ -26,7 +36,7 @@ body {
 }
 
 .headline {
-	padding: 120px 0;
+	padding: 130px 0;
 }
 
 .headline h1 {

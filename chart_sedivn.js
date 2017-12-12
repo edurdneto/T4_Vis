@@ -159,19 +159,19 @@ var colorRange = d3.scale.category10();
 
       var sediBarChart = $("#barChart").vs(mySettings).data('visualSedimentation');
 
-      // var fake_hashtags = Array('NFL', 'F1', 'WorldCup', 'Barcelona', 'NBA', 'Football', 'BrazilGP', 'RealMadrid', 'Italy', 'football')
+      var fake_hashtags = Array('NFL', 'F1', 'WorldCup', 'Barcelona', 'NBA', 'Football', 'BrazilGP', 'RealMadrid', 'Italy', 'football')
 
-      // d3.selectAll(".gcol").append("text")
-      //     .attr("dy", "16.5em")
-      //     .attr("dx", mySettings.width/(2*mySettings.data.model.length))
-      //     .attr("text-anchor", "middle")
-      //     .attr("vertical-align", "middle")
-		  		// .attr("class", function(d, i) { return "coltext coltext_"+i/4; })
-      //     .text(function(d, ii) {
-      //     //	if(ii%4==0) {
- 					// 	return fake_hashtags[ii/4];//truncate(hashtags[ii], 10); // truncate(hashtags[ii/4], 10);
-      //     	//}
-      //     });
+      d3.selectAll(".gcol").append("text")
+          .attr("dy", "16.5em")    
+          .attr("dx", mySettings.width/(2*mySettings.data.model.length))
+          .attr("text-anchor", "middle")
+          .attr("vertical-align", "middle")
+		  		.attr("class", function(d, i) { return "coltext coltext_"+i/4; })
+          .text(function(d, ii) {
+          //	if(ii%4==0) {
+ 						return fake_hashtags[ii/4];//truncate(authors[ii], 10); // truncate(authors[ii/4], 10);
+          	//}
+          });
 
    	return sediBarChart;
   }
