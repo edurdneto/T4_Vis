@@ -136,6 +136,9 @@
 //         });
 
 //       })(window.d3);
+
+
+
 var canvas = document.querySelector("canvas"),
     context = canvas.getContext("2d");
 
@@ -158,6 +161,11 @@ var labelArc = d3.arc()
 var pie = d3.pie()
     .sort(null)
     .value(function(d) { return d.count; });
+
+var svg = d3.select("body")
+                    .append("svg")
+                    .attr("width", width)
+                    .attr("height", height);
 
 context.translate(width / 2, height / 2);
 

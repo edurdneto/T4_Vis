@@ -1,79 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="">
 
-	<title>Trabalho Final - Visualização Científica</title>
+   <title>Trabalho Final - Visualização Científica</title>
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/dc.css"/>
-	<link href="css/one-page-wonder.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" type="text/css" href="css/dc.css"/>
+   <link href="css/one-page-wonder.css" rel="stylesheet">
 
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/crossfilter.js" charset="utf-8"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/crossfilter.js" charset="utf-8"></script>
     <script src="https://d3js.org/d3.v4.min.js" data-semver="4.0.0" data-require="d3@*"></script>
-	<script src="js/dc.js" charset="utf-8"></script>
+   <script src="js/dc.js" charset="utf-8"></script>
 
-	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+      <script src = "https://code.highcharts.com/highcharts.js"></script> 
 
-	<script>
+   <script>
         $(function(){
             $("#menu").load("header.html");
         });
     </script>
 
-	<style>
+   <style>
 
-		body {
-		  font: 10px sans-serif;
-		}
+      body {
+        font: 10px sans-serif;
+      }
 
-		.axis path,
-		.axis line {
-		  fill: none;
-		  stroke: #000;
-		  shape-rendering: crispEdges;
-		}
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
 
-		.x.axis path {
-		  display: none;
-		}
+      .x.axis path {
+        display: none;
+      }
 
-		.line {
-		  fill: none;
-		  stroke: steelblue;
-		  stroke-width: 1.5px;
-		}
+      .line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+      }
 
-	</style>
+   </style>
 
 <body>
 
 
     <nav id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<!-- /.container -->
-	</nav>
+      <!-- /.container -->
+   </nav>
 
 
 
    <div class="container">
-	<div class="featurette" id="Top10">
-		<div align="center"><h1> Top 10 hashtags entre 22/11/2017 e 29/11/2017</h1>
-        <div id="chart" align="center">
-        	<canvas width="960" height="500"></canvas>
-			<script src="//d3js.org/d3.v4.0.0-alpha.4.min.js"></script>
-        	<script type="text/javascript" src="js/piechart.js"></script>
-        </div>
-    </div>
+   <div class="featurette" id="Top10">
+      <div id = "container" style = "width: 550px; height: 400px; margin: 0 auto"></div>
+      <script language = "JavaScript">
+         $(document).ready(function() {
+            var chart = {
+               plotBackgroundColor: null,
+               plotBorderWidth: null,
+               plotShadow: false
+            };
+            var title = {
+               text: ' '   
+            };      
+            var colors = ["#543005", "#8c510a", "#bf812d", "#dfc27d", "#f6e8c3", "#c7eae5", "#80cdc1", "#35978f","#01665e","#003c30"];
+            var tooltip = {
+               pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            };
+            var plotOptions = {
+               pie: {
+                  allowPointSelect: true,
+                  cursor: 'pointer',
+                  
+                  dataLabels: {
+                     enabled: false           
+                  },
+                  
+                  showInLegend: true
+               }
+            };
+            var series = [{
+               type: 'pie',
+               name: 'Tweets',
+               data: [
+                  ['Real Madrid',   12651],
+                  ['NFL',       12860],
+                  {
+                     name: 'NBA',
+                     y: 11220,
+                     sliced: true,
+                     selected: true
+                  },
+                  ['ChampionsLeague',    22830],
+                  ['UCL',     11653],
+                  ['PSG',   11653],
+                  ['PSGCEL',   8722],
+                  ['Barcelona',   8095],
+                  ['Peru',   7039],
+                  ['F1',   7721]
+               ]
+            }];     
+            var json = {};   
+            json.chart = chart; 
+            json.title = title;     
+            json.tooltip = tooltip;  
+            json.series = series;
+            json.colors = colors;
+            json.plotOptions = plotOptions;
+            $('#container').highcharts(json);  
+         });
+      </script>   
+   </div>
 
 </body>
 
