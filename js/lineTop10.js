@@ -36,10 +36,10 @@ var svg = d3.select("body").append("svg")
   
       
 // var filterData={"RealMadrid":true,"NFL":true,"Palmeiras":true};//cities to be shown
-var filterData={"Barcelona":true,"RealMadrid":true,"NFL":true,"ChampionsLeague":true,"football":true,"NBA":true,"WorldCup":true,"RMUCL":true,"F1":true,"Italy":true};
+var filterData={"Barcelona":true,"RealMadrid":true,"NFL":true,"ChampionsLeague":true,"Peru":true,"NBA":true,"PSGCEL":true,"UCL":true,"F1":true,"PSG":true};
 
 function drawChart(filterData){
-d3.csv("../datasets/top.csv", function(error, data) {
+d3.csv("../datasets/top2.csv", function(error, data) {
   color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
 
   // data.forEach(function(d) {

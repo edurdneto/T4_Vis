@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Trabalho Final - Visualização Científica</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/dc.css"/>
+	<link href="css/one-page-wonder.css" rel="stylesheet">
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/crossfilter.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3.v4.min.js" data-semver="4.0.0" data-require="d3@*"></script>
+	<script src="js/dc.js" charset="utf-8"></script>
+
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+	<script>
+        $(function(){
+            $("#menu").load("header.html");
+        });
+    </script>
+
+	<style>
+
+		body {
+		  font: 10px sans-serif;
+		}
+
+		.axis path,
+		.axis line {
+		  fill: none;
+		  stroke: #000;
+		  shape-rendering: crispEdges;
+		}
+
+		.x.axis path {
+		  display: none;
+		}
+
+		.line {
+		  fill: none;
+		  stroke: steelblue;
+		  stroke-width: 1.5px;
+		}
+
+	</style>
+
+<body>
+
+
+    <nav id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<!-- /.container -->
+	</nav>
+
+
+
+   <div class="container">
+	<div class="featurette" id="Top10">
+		<div align="center"><h1> Top 10 hashtags entre 22/11/2017 e 29/11/2017</h1>
+        <div id="chart" align="center">
+        	<canvas width="960" height="500"></canvas>
+			<script src="//d3js.org/d3.v4.0.0-alpha.4.min.js"></script>
+        	<script type="text/javascript" src="js/piechart.js"></script>
+        </div>
+    </div>
+
+</body>
+
+</html>
