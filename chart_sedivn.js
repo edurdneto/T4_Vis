@@ -30,7 +30,7 @@ var chart_sedivn = function(xml) {
 
 			// Visual Sedimentation init
       var mySettings = {
-        	width:800,
+        	width:900,
          	height:350,
           chart:{
 						x:0,
@@ -55,7 +55,7 @@ var chart_sedivn = function(xml) {
         chart:{
             x:0,
             y:0,
-            width:800,
+            width:900,
             height:330
           },
         options:{
@@ -63,7 +63,7 @@ var chart_sedivn = function(xml) {
         }
       }
 
-var w = 800;
+var w = 900;
 var h = 150;
 
 var xx = d3.scale.linear()
@@ -159,7 +159,8 @@ var colorRange = d3.scale.category10();
 
       var sediBarChart = $("#barChart").vs(mySettings).data('visualSedimentation');
 
-      var fake_hashtags = Array('NFL', 'F1', 'WorldCup', 'Barcelona', 'NBA', 'Football', 'BrazilGP', 'RealMadrid', 'Italy', 'football')
+//      var fake_hashtags = Array('football', 'NBA', 'NFL', 'RealMadrid', 'Barcelona', 'RMUCL', 'WorldCup', 'Italy', 'ChampionsLeague', 'F1', 'Peru', 'PSGCEL', 'UCL', 'PSG')
+      var fake_hashtags = Array('Peru', 'PSGCEL', 'Barcelona', 'F1', 'UCL', 'PSG', 'RealMadrid', 'ChampionsLeague', 'NBA', 'NFL')
 
       d3.selectAll(".gcol").append("text")
           .attr("dy", "16.5em")    

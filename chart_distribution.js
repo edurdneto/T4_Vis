@@ -1,5 +1,5 @@
 
-var width = 800,
+var width = 900,
     height = 250,
     height2 = 150;
 
@@ -104,22 +104,22 @@ var chart_distribution = function(data) {
         .attr("y", 30)
         .attr("id", "relative_time");
 
-  context.append("line")
-         .attr("x1", "763px")
-         .attr("x2", "763px")
-         .attr("y1", "0px")
-         .attr("y2", "150px")
-         .style("stroke-dasharray", "5, 2")
-         .style("stroke-width", "1")
-         .attr("class", "top")
-         .style("opacity", .2)
-         .style("stroke", "black");
-
-  context.append("text")
-        .attr("x", "763px")
-        .attr("y", "-2px")
-        .attr("text-anchor", "middle")
-        .style("font-size", "8px")
-        .text("Deadline");
+//  context.append("line")
+//         .attr("x1", "763px")
+//         .attr("x2", "763px")
+//         .attr("y1", "0px")
+//         .attr("y2", "150px")
+//         .style("stroke-dasharray", "5, 2")
+//         .style("stroke-width", "1")
+//         .attr("class", "top")
+//         .style("opacity", .2)
+//         .style("stroke", "black");
+//
+//  context.append("text")
+//        .attr("x", "763px")
+//        .attr("y", "-2px")
+//        .attr("text-anchor", "middle")
+//        .style("font-size", "8px")
+//        .text("Deadline");
 
 }

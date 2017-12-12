@@ -1,38 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="hashtag" content="">
 
-	<title>Trabalho Final - Visualização Científica</title>
+	<title>T4 - Sports</title>
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/dc.css"/> -->
-	<link href="css/one-page-wonder.css" rel="stylesheet">
-	<style>@import url(../../css/top10Dinamic.css);</style>
+	<script type="text/javascript" src="d3.min.js" ></script>
+	<script type="text/javascript" src="topojson.min.js"></script>
+	<script type="text/javascript" src="datamaps.world.min.js"></script>
+<!--     <style>@import url(../../css/fan-of-mike-style.css);</style> -->
 
-	<script type="text/javascript" src="js/_VisualSedimentation.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
 	<link href="sedivn.css" rel="stylesheet" type="text/css"/>
 
-	<script type="text/javascript" src="../../js/lib/StreamPlayer/streamPlayer.js"></script>
-	<script type="text/javascript" src="utils.js"></script>
-	<script type="text/javascript" src="chart_sedivn.js"></script>
-	<script type="text/javascript" src="chart_distribution.js"></script>
-
-	<script>
-        $(function(){
-            $("#menu").load("header.html");
-        });
-    </script>
 </head>
 
 <body>
@@ -41,31 +29,393 @@
 		<!-- /.container -->
 	</nav>
 
-   <!-- Page Content -->
-   <div class="container">
-	<div class="featurette" id="Top10">
+	  <div id="world-map" style="position: absolute; width: 1000px; height: 500px; left: 180px; top: 100px;">
+	  
+	  </div>
+      <!-- div container -->
+      <span id="bubbleChart" style="position: absolute; width: 1000px; height: 500px; left: 180px; top: 100px;"></span>
 
-	<h3>Time-based Twitter <br> Trending Topics</h3>
-			  <span id="simple-stream-player" >
-					<a id="btn-playpause" class="btn pause btn-mini" href="#" style="text-align:left">Pause&nbsp;<i class="icon-pause"></i></a>
-					<a id="btn-repeat" class="btn btn-mini" href="#" style="text-align:left">Restart&nbsp;<i class="icon-repeat"></i></a>
-					<a id="btn-sound" class="btn btn-mini sound" href="#" >Sound&nbsp;<i class="icon-volume-up"></i></a>
-			  </span>
+	  <span id="simple-stream-player" >
+				<a id="btn-playpause" class="btn pause btn-mini" href="#" style="text-align:left">Pause&nbsp;<i class="icon-pause"></i></a>
+				<a id="btn-repeat" class="btn btn-mini" href="#" style="text-align:left">Restart&nbsp;<i class="icon-repeat"></i></a>
+			</span>
+			
+      <!-- Create my visual sedimentation -->
+      <script type="text/javascript">
+	  
+		var map = new Datamap({
+			element: document.getElementById('world-map'),
+// 			projection: 'mercator'
+			setProjection: function(element) {
+				var projection = d3.geo.equirectangular()
+				  .scale(150);
+				var path = d3.geo.path()
+				  .projection(projection);
+				return {path: path, projection: projection};
+			}
+		});
+		
+		</script>	  
+	  	<script type="text/javascript" src="js/_VisualSedimentation.js"></script>
+		<script type="text/javascript" src="../../js/lib/StreamPlayer/streamPlayer.js"></script>		
+		<script type="text/javascript" src="chart_distribution.js"></script>
+		<script type="text/javascript">
+	  
+		 $(function(){
+	            $("#menu").load("header.html");
+	        });
+		
+		var nb_previous_day,nb_previous_week,nb_all; 
+		var entries, hashtags;
+		var min_time, max_time;
+		var TOGGLE_PLAY=true, PLAY_SOUND=true;
+		var INCREMENT_UPDATE = 100000;
+		var sp;
+		var distribBarChart;
+	  
+	    d3.xml("datasets/geo.xml", function(xml) {
+			entries = d3.select(xml).selectAll("tweet")[0];
 
-			  <div style="position:absolute; left:320px; top:0px; width:400px">
-				<!-- <div id="barChartOverlay" style="position:absolute; top:80px;"></div> -->
-				<div id="barChart" style="position:absolute; top:-100px;"></div>
-				<div id="distribution" style="position:absolute; top:280px"></div>
+			hashtags = d3.keys(d3.nest()
+					.key(function(d) {return d3.select(d).select("hashtag")[0][0].textContent;})
+					.map(entries));
 
-			  </div>
-			  <div id="top10">
-				  <script type="text/javascript" src="top10.js"></script>
-				  <script type="text/javascript" src="chart_legends.js"></script>
-			  </div>
-		</div>
+				min_time = d3.min(entries, function(data) {
+					return Date.parse(d3.select(data).select("date")[0][0].textContent);
+				});
+			
+				max_time = d3.max(entries, function(data) {
+					return Date.parse(d3.select(data).select("date")[0][0].textContent);
+				});	
 
-	</div>
+				current_time=min_time;
+				last_time=current_time;	
+			  
+			  // Adding one extra day to make the tokens disappear
+				max_time += 1000 * 60 * 60 * 27;
+						
+				var max_paths =  d3.max(entries, function(data) {
+				  return parseInt(d3.select(data).select("size")[0][0].textContent);
+				});
 
+				var token_scale = d3.scale.linear().domain([0, max_paths])
+														   .rangeRound([2, 8]);
+
+				var nb_commits=[];
+
+				entries.map(function (data) {
+					var t = hashtags.indexOf(d3.select(data).select("hashtag")[0][0].textContent);
+					if(typeof(nb_commits[t]) == 'undefined')
+						nb_commits[t] = 0;
+					nb_commits[t]++;
+				});
+											
+				max_commits =  d3.max(nb_commits, function(data) {
+					return data;
+				});
+				
+				nb_previous_day=init_array(hashtags.length+1);
+				nb_previous_week=init_array(hashtags.length+1)
+				nb_all=init_array(hashtags.length+1);
+								
+				current_time = min_time;
+				prev_time=min_time;
+				d3.select("#min_time").text(min_time);
+				d3.select("#max_time").text(max_time);
+				
+				mySettings = {
+					width:1000,
+					height:500,
+					data:{
+						model:toModel(hashtags),
+						// strata: function() { return fstrata(); },
+						// strata: fstrata(),
+						
+						strata:
+						[
+						 [{initValue: 0, label: "Strata 1 col A"}],
+						 [{initValue: 0, label: "Strata 1 col B"}],
+						 [{initValue: 0, label: "Strata 1 col B"}],
+						 [{initValue: 0, label: "Strata 1 col B"}],
+						 [{initValue: 0, label: "Strata 1 col B"}]   
+						],
+						
+						stream:"direct"
+						
+						/* model:
+							  [
+								{label:"Column A"},
+								{label:"Column B"},
+								{label:"Column C"},
+							  ], 
+						strata:[
+								 [{initValue: 10, label: "Strata 1 col A"}],
+								 [{initValue: 5, label: "Strata 1 col B"}],
+								 [{initValue: 20, label: "Strata 2 col C"}]      
+								],
+						stream:{
+						  provider:'generator',
+						  refresh:1000/6
+						}
+						*/
+					},
+					chart:{	
+						type:'CircleLayout',
+						x:100,
+						y:200,	
+					},
+					sedimentation:{
+						token:{
+							size:{original:15,minimum:1}
+						},
+						suspension:{
+							decay:{power:1.005}
+						}
+					},
+					aggregation:{
+						height:150,
+						maxData:max_commits
+					  },
+					options:{
+						layout:false,
+				   // debugaggregate:true
+				  }
+				}
+
+			  // Difference between a Bubble chart and a piechart settings model 
+//			  mySettings.chart.treeLayout = true
+//			  mySettings.chart.spacer     = 10
+	//		  mySettings.chart.column     = 11
+				
+//			  mySettings.data.model[6].incomingPoint = {x:200,y:200};	
+			  
+			  var myBubbleChart = $("#bubbleChart").vs(mySettings).data('visualSedimentation');
+
+		       // Change the default token incomming target 
+			  myBubbleChart.settings.sedimentation.incoming.target[0] = {x:200,y:100}; // Canada
+			  myBubbleChart.settings.sedimentation.incoming.target[1] = {x:220,y:150}; // USA
+			  myBubbleChart.settings.sedimentation.incoming.target[2] = {x:220,y:200}; // Mexico
+			  myBubbleChart.settings.sedimentation.incoming.target[3] = {x:500,y:125}; // GBR
+			  myBubbleChart.settings.sedimentation.incoming.target[4] = {x:830,y:310}; // Australia
+// 			  myBubbleChart.settings.sedimentation.incoming.target[5] = {x:740,y:200};
+// 			  myBubbleChart.settings.sedimentation.incoming.target[6] = {x:360,y:280}; // Brasil
+// 			  myBubbleChart.settings.sedimentation.incoming.target[7] = {x:750,y:90};  // Russia
+// 			  myBubbleChart.settings.sedimentation.incoming.target[8] = {x:830,y:310};
+// 			  myBubbleChart.settings.sedimentation.incoming.target[9] = {x:500,y:125}; // Europa
+// 			  myBubbleChart.settings.sedimentation.incoming.target[10] = {x:200,y:100};
+			  
+//			  myBubbleChart.settings.sedimentation.incoming.point[0]={x:500,y:400}
+				
+		 distribBarChart = chart_distribution(xml);		
+		 		
+		 // MAIN LOOP
+	      function update(once) {
+
+	      	if(typeof once == "undefined")
+	      		once = false;
+
+			if(current_time > max_time)
+				return;
+
+					if((TOGGLE_PLAY || once) && current_time <= max_time) {
+
+						d3.select("#current_time") //text(new Date(current_time));
+						.text(function() {
+							var ct = current_time - (max_time - 1 * 1000 * 60 * 60 * 26);
+
+							var cd = 1+ct/(1000 * 60 * 60 * 24);
+					
+							var ch = 24-(cd-Math.floor(cd))*24;
+
+							var sh="s", sd="s", leftover="left";
+
+							if(ct>0) {
+								cd--;
+								ch=Math.abs(24-ch);
+								leftover = "over";
+							} 
+							if(ch<2) sh = "";
+							if(cd<2) sd = "";
+
+							return Math.abs(Math.floor(cd)) +" day"+sd+" "+Math.floor(ch)+" hour"+sh+" "+leftover;
+					});
+
+					current_time+=INCREMENT_UPDATE;
+
+			  	//nb_last_hour=init_array(hashtags.length+1);
+			  	nb_previous_day=init_array(hashtags.length+1);
+			  	nb_previous_week=init_array(hashtags.length+1);
+			  	nb_all=init_array(hashtags.length+1);
+
+	  			var this_day = current_time - 1000 * 60 * 60* 24;
+	  			var previous_day = this_day - 1000 * 60 * 60 * 24;
+	  			var previous_week = previous_day - 1000 * 60 * 60 * 24 * 7;
+
+					// UPDATE TIME WINDOW
+					d3.select(".window").attr("width", x(new Date(current_time)));
+					d3.select("#current_time").attr("x", function() {
+						var pos_x = x(new Date(current_time));
+						if(pos_x < 400) {
+							return pos_x;
+						} else {
+							return pos_x-100;
+						}
+					});
+					
+
+					//d3.select("#relative_time").attr("x", function() { return d3.select("#current_time").attr("x");})
+
+					// SEDIMENT TOKENS OLDER THAN ONE DAY OLD
+	//				for(var c=0; c<myBubbleChart.settings.data.model.length; c++) {
+	//					var tks = myBubbleChart.selectAll("category", c);
+	//					for(var t=0; t<tks.length; t++) {
+	//						if(tks[t].attr("t") < this_day)
+	//							tks[t].flocculate();
+	//					}
+	//				}
+
+					entries.filter(function(d, i) {
+
+						var dt = Date.parse(d3.select(d).select("date")[0][0].textContent);
+						var cat = hashtags.indexOf(d3.select(d).select("hashtag")[0][0].textContent);
+
+						if((dt<current_time) && (dt>=last_time)) {
+
+							// ADD TOKEN FOR EACH NEW COMMIT
+							myBubbleChart.addToken({
+								x:400,
+								y:200,
+								t:dt,
+								fill: "#ff0000",
+								category: cat,
+								size: token_scale(parseInt(d3.select(d).select("size")[0][0].textContent)),
+							}); 
+							  
+							// HIGHLIGHT COLUMN TEXT
+							d3.select(".coltext_"+cat).style("font-size", 10).transition().duration(1000).style("font-size", 10);
+
+						} else if( (dt<this_day) && (dt>=previous_day)) {
+							nb_previous_day[cat]++;
+						} else if( (dt<previous_day) && (dt>=previous_week)) {
+							nb_previous_week[cat]++;
+						} else if( (dt<previous_week) )
+							nb_all[cat]++;
+//						else
+	//						nb_last_all[cat]++;
+					});
+					last_time=current_time;
+				}
+			}	
+			
+			sp = new StreamPlayer('simple-stream-player', {
+    			auto_start: true,
+			  current_time: function() { 
+			  },
+			  current_speed: 50,
+			  current_step: 100000,
+			  max_time: 0,
+			  updateCallback: function(a) {
+				myBubbleChart.strata.update(myBubbleChart);
+				update(a);
+			  },
+			  refreshCallback: function() {
+			  },
+			  playCallback: function() {
+				TOGGLE_PLAY = !TOGGLE_PLAY
+				d3.select("#btn-playpause").text("Pause  ").on("click", sp.pauseCallback)//.style("width", "60px");
+				d3.select("#btn-playpause").append("i").attr("class", "icon-pause").style("margin-left", "0px");
+
+			  },
+			  pauseCallback: function() {
+				TOGGLE_PLAY = !TOGGLE_PLAY;
+				d3.select("#btn-playpause").text("Start  ").on("click", sp.playCallback)//.style("width", "60px");
+				d3.select("#btn-playpause").append("i").attr("class", "icon-play").style("margin-left", "5.5px");
+							//d3.select(".icon-pause").on("click", sp.playCallback)
+			  },
+			  soundCallback: function() {
+				PLAY_SOUND = !PLAY_SOUND;
+				if(PLAY_SOUND) {
+					d3.select("#btn-sound").text("Sound").on("click", sp.soundCallback)
+					d3.select("#btn-sound").append("i").attr("class", "icon-volume-up").style("margin-left", "5.5px");
+				} else {
+					d3.select("#btn-sound").text("Sound").on("click", sp.soundCallback)
+					d3.select("#btn-sound").append("i").attr("class", "icon-volume-off").style("margin-left", "5.5px");
+				}
+			  }
+			});
+		
+			// INIT
+			sp.playCallback;
+			
+		});
+	  
+		function init_array(size) {
+		  return new Array(size).join('0').split('').map(function(e) {return parseInt(e, 10);})  
+		}
+	  
+		function toModel(arr) {
+		  var rv = [];
+		  for (var i = 0; i < arr.length; ++i)
+			rv[i] = {label:arr[i], /* incomingPoint: {x:200,y:400} /* ,value:0 */ };
+		  return rv;
+		}  
+		  
+		function toStrata(arr) {
+			 var a = Array();
+			 for (var i = 0; i < arr.length; ++i){
+				var item = [];
+				item = {initValue:0, label: "str" + arr[i] /* ,value:0 */ };
+				a.push(item);
+			 }
+			 console.log(a);
+			 return a;
+		}
+		
+		function toStrata() {
+			 var a = [
+						 [{initValue: 0, label: "Strata 1 col A"}],
+						 [{initValue: 0, label: "Strata 1 col B"}],
+						 [{initValue: 0, label: "Strata 1 col B"}],
+						 [{initValue: 0, label: "Strata 1 col B"}],
+						 [{initValue: 0, label: "Strata 1 col B"}],
+						 [{initValue: 0, label: "Strata 1 col B"}],
+						 [{initValue: 0, label: "Strata 1 col B"}],
+						 [{initValue: 0, label: "Strata 1 col B"}],
+						 [{initValue: 0, label: "Strata 1 col B"}],
+						 [{initValue: 0, label: "Strata 1 col B"}],
+						 [{initValue: 0, label: "Strata 2 col C"}]      
+						];
+		}
+	  
+		function fstrata() {
+		  var a = Array();
+		  for(var s=0; s<hashtags.length; s++)
+			a.push(fstratum(s));
+		  return a;
+		 }
+		 
+		 function fstratum(a) {
+			var res = [];	
+			 if(typeof nb_previous_day != "undefined" && !isNaN(nb_previous_day[a]) && !isNaN(nb_previous_day[a]) ) {
+			(function(v, h, d, w) {
+			   res.push({value: function() { return w; }, label:"Strata Previous Day", category:a}) 
+			   res.push({value: function() { return d; }, label:"Strata Previous Week", category:a}) 
+			   res.push({value: function() { return h; }, label:"Strata Rest", category:a})
+			})(a, nb_previous_day[a], nb_previous_week[a], nb_all[a]);
+		  } else {
+			   res.push({value: function() { return 0; }, label:"Strata Previous Day", category:a}) 
+			   res.push({value: function() { return 0; }, label:"Strata Previous Week", category:a}) 
+			   res.push({value: function() { return 0; }, label:"Strata Rest", category:a})
+		  }
+		  return res;
+		}
+		
+
+    </script>
+		<div id="distribution" style="position:absolute; top:510px; left: 240px;"></div>
+		<div id="top10">
+		  <script type="text/javascript" src="chart_legends.js"></script>
+	  </div>
 </body>
 
 </html>

@@ -3,7 +3,7 @@ var entries, table, hashtags, a;
         var sediBarChart;
         var nb_previous_day,nb_previous_week,nb_all;
         var min_time, max_time
-        var INCREMENT_UPDATE = 100000;
+        var INCREMENT_UPDATE = 120000;
 
         function set_current_time(t) {
             sediBarChart.selectAll().flocculate();
@@ -12,7 +12,7 @@ var entries, table, hashtags, a;
             sediBarChart.strata.update(sediBarChart);
         }
 
-        d3.xml("datasets/cluster.xml", function(xml) {
+        d3.xml("datasets/data2.xml", function(xml) {
 
           entries = d3.select(xml).selectAll("tweet")[0];
           console.log(entries);
@@ -41,7 +41,7 @@ var entries, table, hashtags, a;
           });
 
           var token_scale = d3.scale.linear().domain([0, max_size])
-                               .rangeRound([2, 20]);//mySettings.width/sediBarChart.settings.data.model.length]);
+                               .rangeRound([2, 15]);//mySettings.width/sediBarChart.settings.data.model.length]);
 
           var nb_commits=[];
 
@@ -67,17 +67,13 @@ var entries, table, hashtags, a;
         // MAIN LOOP
         function update(once) {
 
-
           if(typeof once == "undefined")
             once = false;
 
           if(current_time > max_time)
             return;
 
-
           if((TOGGLE_PLAY || once) && current_time <= max_time) {
-
-
 
             d3.select("#current_time") //text(new Date(current_time));
             .text(function() {
@@ -122,7 +118,7 @@ var entries, table, hashtags, a;
             }
           });
 
-          //d3.select("#relative_time").attr("x", function() { return d3.select("#current_time").attr("x");})
+          d3.select("#relative_time").attr("x", function() { return d3.select("#current_time").attr("x");})
 
           // REMOVE TOKENS OLDER THAN ONE DAY OLD
           for(var c=0; c<sediBarChart.settings.data.model.length; c++) {
@@ -146,15 +142,6 @@ var entries, table, hashtags, a;
                 category: cat,
                 size: token_scale(parseInt(d3.select(d).select("size")[0][0].textContent)),
               });
-
-              // PLAY SOUND IF ENABLED
-              // if(PLAY_SOUND)
-              //   _sndCollection[sound_scale(parseInt(d3.select(d).select("size")[0][0].textContent))].play();
-
-              // APPEND TO LOG LIST
-//              $("#logs ul").prepend(
-//                $('<li style="font-size:8px; line-height:10px">').append("<span style='color:lightgray'>["+d3.select(d).select("date")[0][0].textContent+"]</span> "+d3.select(d).select("hashtag")[0][0].textContent + ": " + d3.select(d).select("msg")[0][0].textContent+"").delay(1000).fadeOut(1500, function() {})
-//              );
 
               // HIGHLIGHT COLUMN TEXT
               d3.select(".coltext_"+cat).style("font-size", 10).transition().duration(1000).style("font-size", 10);
@@ -196,22 +183,11 @@ var entries, table, hashtags, a;
             d3.select("#btn-playpause").text("Start  ").on("click", sp.playCallback)//.style("width", "60px");
             d3.select("#btn-playpause").append("i").attr("class", "icon-play").style("margin-left", "5.5px");
             //d3.select(".icon-pause").on("click", sp.playCallback)
-          },
-          soundCallback: function() {
-            PLAY_SOUND = !PLAY_SOUND;
-            if(PLAY_SOUND) {
-              d3.select("#btn-sound").text("Sound").on("click", sp.soundCallback)
-              d3.select("#btn-sound").append("i").attr("class", "icon-volume-up").style("margin-left", "5.5px");
-            } else {
-              d3.select("#btn-sound").text("Sound").on("click", sp.soundCallback)
-              d3.select("#btn-sound").append("i").attr("class", "icon-volume-off").style("margin-left", "5.5px");
-            }
           }
         });
 
         // INIT
         d3.select("#btn-playpause").on("click", sp.pauseCallback)
-        d3.select("#btn-sound").on("click", sp.soundCallback)
         d3.select("#btn-repeat").on("click", function() {
           set_current_time(min_time);
           self.updateCallback(true);

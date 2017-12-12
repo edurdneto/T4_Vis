@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tweets>
+	<tweet id="1">
+		<hashtag>CAN</hashtag>
+		<date>Sun Dec 3 00:00:05 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="21">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 00:02:01 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="193">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 00:15:05 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="283">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 00:23:02 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="311">
+		<hashtag>MEX</hashtag>
+		<date>Sun Dec 3 00:24:41 +0000 2017</date>
+		<size>2</size>
+	</tweet>	
+	<tweet id="359">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 00:28:39 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="394">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 00:31:40 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="465">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 00:37:42 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="573">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 00:46:43 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="627">
+		<hashtag>GBR</hashtag>
+		<date>Sun Dec 3 00:50:52 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="760">
+		<hashtag>CAN</hashtag>
+		<date>Sun Dec 3 01:00:02 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="918">
+		<hashtag>MEX</hashtag>
+		<date>Sun Dec 3 01:08:46 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="1023">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 01:14:46 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="1147">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 01:21:15 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="1185">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 01:25:10 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+<tweet id="1472">
+		<hashtag>GBR</hashtag>
+		<date>Sun Dec 3 01:36:16 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="1631">
+		<hashtag>AUS</hashtag>
+		<date>Sun Dec 3 01:45:27 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="1740">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 01:54:13 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="1773">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 01:57:05 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="1961">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 02:05:19 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="2335">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 02:21:17 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="2481">
+		<hashtag>MEX</hashtag>
+		<date>Sun Dec 3 02:29:58 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="2655">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 02:36:25 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="2880">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 02:49:07 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="3105">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 03:00:14 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="3351">
+		<hashtag>MEX</hashtag>
+		<date>Sun Dec 3 03:13:25 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="3543">
+		<hashtag>AUS</hashtag>
+		<date>Sun Dec 3 03:27:34 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="3718">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 03:39:57 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="3971">
+		<hashtag>CAN</hashtag>
+		<date>Sun Dec 3 03:59:08 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="4135">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 04:09:38 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="4322">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 04:18:44 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="4489">
+		<hashtag>AUS</hashtag>
+		<date>Sun Dec 3 04:29:01 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="4697">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 04:44:32 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="4926">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 05:03:35 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="5155">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 05:33:44 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="5334">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 05:51:08 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="5459">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 05:57:56 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="5667">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 06:30:08 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="5817">
+		<hashtag>MEX</hashtag>
+		<date>Sun Dec 3 07:06:44 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="5975">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 07:58:06 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="6101">
+		<hashtag>MEX</hashtag>
+		<date>Sun Dec 3 08:53:11 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="6209">
+		<hashtag>CAN</hashtag>
+		<date>Sun Dec 3 09:13:23 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="6321">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 10:01:29 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="6347">
+		<hashtag>GBR</hashtag>
+		<date>Sun Dec 3 10:08:34 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="6460">
+		<hashtag>MEX</hashtag>
+		<date>Sun Dec 3 10:47:20 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="6572">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 11:25:47 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="6709">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 11:56:18 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="6896">
+		<hashtag>AUS</hashtag>
+		<date>Sun Dec 3 12:28:07 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="7000">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 12:45:04 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="7105">
+		<hashtag>AUS</hashtag>
+		<date>Sun Dec 3 13:00:17 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="7127">
+		<hashtag>MEX</hashtag>
+		<date>Sun Dec 3 13:01:33 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="7239">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 13:16:28 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="7347">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 13:28:27 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="7430">
+		<hashtag>GBR</hashtag>
+		<date>Sun Dec 3 13:35:49 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="7530">
+		<hashtag>MEX</hashtag>
+		<date>Sun Dec 3 13:48:04 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="7659">
+		<hashtag>MEX</hashtag>
+		<date>Sun Dec 3 14:03:00 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="7672">
+		<hashtag>AUS</hashtag>
+		<date>Sun Dec 3 14:04:08 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="7809">
+		<hashtag>GBR</hashtag>
+		<date>Sun Dec 3 14:16:18 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="7909">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 14:30:22 +0000 2017</date>
+		<size>5</size>
+	</tweet>
+	<tweet id="8022">
+		<hashtag>MEX</hashtag>
+		<date>Sun Dec 3 14:41:12 +0000 2017</date>
+		<size>4</size>
+	</tweet>
+	<tweet id="8155">
+		<hashtag>AUS</hashtag>
+		<date>Sun Dec 3 14:56:34 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="8335">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 15:12:54 +0000 2017</date>
+		<size>6</size>
+	</tweet>
+	<tweet id="8455">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 15:26:09 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="8464">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 15:26:19 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="8593">
+		<hashtag>GBR</hashtag>
+		<date>Sun Dec 3 15:39:46 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="8718">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 15:50:25 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="8859">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 16:03:57 +0000 2017</date>
+		<size>4</size>
+	</tweet>
+	<tweet id="9051">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 16:17:14 +0000 2017</date>
+		<size>5</size>
+	</tweet>
+	<tweet id="9230">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 16:31:38 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="9331">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 16:42:16 +0000 2017</date>
+		<size>5</size>
+	</tweet>
+	<tweet id="9490">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 16:55:45 +0000 2017</date>
+		<size>4</size>
+	</tweet>
+	<tweet id="9677">
+		<hashtag>AUS</hashtag>
+		<date>Sun Dec 3 17:18:15 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="9893">
+		<hashtag>GBR</hashtag>
+		<date>Sun Dec 3 17:42:52 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="10115">
+		<hashtag>AUS</hashtag>
+		<date>Sun Dec 3 18:04:00 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="10260">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 18:18:48 +0000 2017</date>
+		<size>4</size>
+	</tweet>
+	<tweet id="10348">
+		<hashtag>MEX</hashtag>
+		<date>Sun Dec 3 18:28:16 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="10503">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 18:45:03 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="10636">
+		<hashtag>MEX</hashtag>
+		<date>Sun Dec 3 18:59:20 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="10806">
+		<hashtag>CAN</hashtag>
+		<date>Sun Dec 3 19:14:12 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="10957">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 19:29:47 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="11186">
+		<hashtag>AUS</hashtag>
+		<date>Sun Dec 3 19:46:20 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="11269">
+		<hashtag>AUS</hashtag>
+		<date>Sun Dec 3 19:54:59 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="11557">
+		<hashtag>GBR</hashtag>
+		<date>Sun Dec 3 20:21:33 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="11828">
+		<hashtag>CAN</hashtag>
+		<date>Sun Dec 3 20:50:09 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="11836">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 20:51:00 +0000 2017</date>
+		<size>4</size>
+	</tweet>
+	<tweet id="11961">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 21:03:08 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="12115">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 21:20:11 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="12252">
+		<hashtag>CAN</hashtag>
+		<date>Sun Dec 3 21:32:32 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="12411">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 21:51:28 +0000 2017</date>
+		<size>4</size>
+	</tweet>
+	<tweet id="12590">
+		<hashtag>CAN</hashtag>
+		<date>Sun Dec 3 22:15:57 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="12748">
+		<hashtag>AUS</hashtag>
+		<date>Sun Dec 3 22:31:52 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="12917">
+		<hashtag>GBR</hashtag>
+		<date>Sun Dec 3 22:48:50 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="12922">
+		<hashtag>AUS</hashtag>
+		<date>Sun Dec 3 22:49:32 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="13046">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 23:09:27 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="13125">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 23:20:18 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="13292">
+		<hashtag>USA</hashtag>
+		<date>Sun Dec 3 23:50:10 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="22727">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 00:00:07 +0000 2017</date>
+		<size>4</size>
+	</tweet>
+	<tweet id="22877">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 00:14:54 +0000 2017</date>
+		<size>4</size>
+	</tweet>
+	<tweet id="22998">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 00:25:56 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="23022">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 00:29:49 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="23081">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 00:35:08 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="23202">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 00:46:56 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="23310">
+		<hashtag>CAN</hashtag>
+		<date>Mon Dec 4 00:56:56 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="23318">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 00:58:35 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="23442">
+		<hashtag>AUS</hashtag>
+		<date>Mon Dec 4 01:11:08 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="23572">
+		<hashtag>AUS</hashtag>
+		<date>Mon Dec 4 01:23:11 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="23727">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 01:32:54 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="23898">
+		<hashtag>GBR</hashtag>
+		<date>Mon Dec 4 01:41:10 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="24007">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 01:48:44 +0000 2017</date>
+		<size>4</size>
+	</tweet>
+	<tweet id="24090">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 01:53:22 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="24278">
+		<hashtag>AUS</hashtag>
+		<date>Mon Dec 4 02:05:08 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="24432">
+		<hashtag>CAN</hashtag>
+		<date>Mon Dec 4 02:19:17 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="24591">
+		<hashtag>AUS</hashtag>
+		<date>Mon Dec 4 02:32:20 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="24738">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 02:45:55 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="24879">
+		<hashtag>GBR</hashtag>
+		<date>Mon Dec 4 03:00:51 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="24987">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 03:11:38 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="25083">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 03:21:08 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="25175">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 03:28:29 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="25300">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 03:38:57 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="25429">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 03:49:02 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="25504">
+		<hashtag>AUS</hashtag>
+		<date>Mon Dec 4 03:54:48 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="25612">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 04:03:39 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="25762">
+		<hashtag>CAN</hashtag>
+		<date>Mon Dec 4 04:13:36 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="25908">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 04:21:19 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="26054">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 04:29:34 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="26109">
+		<hashtag>CAN</hashtag>
+		<date>Mon Dec 4 04:35:31 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="26255">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 04:47:49 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="26409">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 05:03:06 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="26555">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 05:16:21 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	
+	<tweet id="26751">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 05:43:46 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="26879">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 06:03:31 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="27042">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 06:55:51 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="27138">
+		<hashtag>AUS</hashtag>
+		<date>Mon Dec 4 07:23:09 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="27316">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 07:54:17 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="27425">
+		<hashtag>GBR</hashtag>
+		<date>Mon Dec 4 08:30:32 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="27546">
+		<hashtag>CAN</hashtag>
+		<date>Mon Dec 4 09:55:35 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="27662">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 10:48:16 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="27687">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 11:01:32 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="27787">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 11:39:02 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="27796">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 11:42:42 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="27951">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 12:30:19 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="28101">
+		<hashtag>CAN</hashtag>
+		<date>Mon Dec 4 13:02:55 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="28225">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 13:20:05 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="28296">
+		<hashtag>CAN</hashtag>
+		<date>Mon Dec 4 13:29:09 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="28380">
+		<hashtag>GBR</hashtag>
+		<date>Mon Dec 4 13:36:59 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="28492">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 13:49:49 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="28609">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 14:02:36 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="30136">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 14:05:49 +0000 2017</date>
+		<size>4</size>
+	</tweet>
+	<tweet id="30252">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 14:15:00 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="30432">
+		<hashtag>AUS</hashtag>
+		<date>Mon Dec 4 14:24:51 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="30524">
+		<hashtag>GBR</hashtag>
+		<date>Mon Dec 4 14:30:10 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="30665">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 14:40:32 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="30811">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 14:50:53 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="30982">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 15:01:15 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="31132">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 15:11:11 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="31282">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 15:17:48 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="31412">
+		<hashtag>CAN</hashtag>
+		<date>Mon Dec 4 15:25:32 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="31514">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 15:30:47 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="31623">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 15:36:38 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="31723">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 15:44:05 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="31823">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 15:48:53 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="31998">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 15:55:25 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="32190">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 16:04:33 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="32336">
+		<hashtag>GBR</hashtag>
+		<date>Mon Dec 4 16:09:02 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="32466">
+		<hashtag>AUS</hashtag>
+		<date>Mon Dec 4 16:14:51 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="32653">
+		<hashtag>CAN</hashtag>
+		<date>Mon Dec 4 16:25:18 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="32823">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 16:36:11 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="32999">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 16:48:40 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="33133">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 16:58:48 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="33270">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 17:07:11 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="33420">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 17:15:36 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="33595">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 17:25:20 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="33745">
+		<hashtag>CAN</hashtag>
+		<date>Mon Dec 4 17:36:06 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="33858">
+		<hashtag>AUS</hashtag>
+		<date>Mon Dec 4 17:43:59 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="33987">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 17:56:35 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="34099">
+		<hashtag>CAN</hashtag>
+		<date>Mon Dec 4 18:04:35 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="34236">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 18:13:14 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="34358">
+		<hashtag>CAN</hashtag>
+		<date>Mon Dec 4 18:18:09 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="34520">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 18:30:04 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="34674">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 18:40:13 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="34828">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 18:52:37 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="34970">
+		<hashtag>CAN</hashtag>
+		<date>Mon Dec 4 19:05:15 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="35103">
+		<hashtag>CAN</hashtag>
+		<date>Mon Dec 4 19:15:06 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="35236">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 19:23:03 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="35357">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 19:31:38 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="35449">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 19:39:45 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="35557">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 19:51:03 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="35716">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 20:02:41 +0000 2017</date>
+		<size>4</size>
+	</tweet>
+	<tweet id="35887">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 20:15:37 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="36066">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 20:26:48 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="36216">
+		<hashtag>GBR</hashtag>
+		<date>Mon Dec 4 20:36:41 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="36382">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 20:46:22 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="36520">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 20:55:10 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="36612">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 21:01:24 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="36745">
+		<hashtag>AUS</hashtag>
+		<date>Mon Dec 4 21:11:30 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="36878">
+		<hashtag>GBR</hashtag>
+		<date>Mon Dec 4 21:19:38 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="37007">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 21:30:24 +0000 2017</date>
+		<size>4</size>
+	</tweet>
+	<tweet id="37107">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 21:37:51 +0000 2017</date>
+		<size>5</size>
+	</tweet>
+	<tweet id="37228">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 21:44:54 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="37345">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 21:53:20 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="37503">
+		<hashtag>GBR</hashtag>
+		<date>Mon Dec 4 22:03:40 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="37607">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 22:13:33 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="37749">
+		<hashtag>CAN</hashtag>
+		<date>Mon Dec 4 22:27:42 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="37857">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 22:34:24 +0000 2017</date>
+		<size>1</size>
+	</tweet>
+	<tweet id="37941">
+		<hashtag>GBR</hashtag>
+		<date>Mon Dec 4 22:42:17 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="38012">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 22:48:57 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="38166">
+		<hashtag>AUS</hashtag>
+		<date>Mon Dec 4 23:01:24 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="38291">
+		<hashtag>CAN</hashtag>
+		<date>Mon Dec 4 23:12:35 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="38337">
+		<hashtag>AUS</hashtag>
+		<date>Mon Dec 4 23:18:08 +0000 2017</date>
+		<size>2</size>
+	</tweet>
+	<tweet id="38466">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 23:30:48 +0000 2017</date>
+		<size>4</size>
+	</tweet>
+	<tweet id="38562">
+		<hashtag>USA</hashtag>
+		<date>Mon Dec 4 23:43:05 +0000 2017</date>
+		<size>5</size>
+	</tweet>
+	<tweet id="38645">
+		<hashtag>AUS</hashtag>
+		<date>Mon Dec 4 23:49:26 +0000 2017</date>
+		<size>3</size>
+	</tweet>
+	<tweet id="38728">
+		<hashtag>MEX</hashtag>
+		<date>Mon Dec 4 23:57:18 +0000 2017</date>
+		<size>4</size>
+	</tweet>
+</tweets>
+	
+	
+	
