@@ -1,7 +1,7 @@
 
 
-var margin = {top: 20, right: 80, bottom: 30, left: 50},
-    width = 960 - margin.left - margin.right,
+var margin = {top: 20, right: 80, bottom: 30, left: 200},
+    width = 1000 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 // var parseDate = d3.time.format("%Y%m%d").parse;
