@@ -33,10 +33,10 @@ var svg3 = d3.select("body").append("svg")
 
   
       
-// var filterData={"RealMadrid":true,"NFL":true,"Palmeiras":true};//cities to be shown
-var filterData={"NFL":true,"Barcelona":true,"PSG":true,"NBA":true,"RealMadrid":true,"ChampionsLeague":true,"Peru":true,"UCL":true,"PSGCEL":true,"F1":true};
+// var filterData3={"RealMadrid":true,"NFL":true,"Palmeiras":true};//cities3 to be shown
+var filterData3={"NFL":true,"Barcelona":true,"PSG":true,"NBA":true,"RealMadrid":true,"ChampionsLeague":true,"Peru":true,"UCL":true,"PSGCEL":true,"F1":true};
 
-function drawChart3(filterData){
+function drawChart3(filterData3){
 d3.csv("../datasets/top_new_end.csv", function(error, data) {
   color3.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
 
@@ -51,7 +51,7 @@ d3.csv("../datasets/top_new_end.csv", function(error, data) {
      
   console.log(data);
 
-  var cities = color3.domain().map(function(name) {
+  var cities3 = color3.domain().map(function(name) {
     return {
       name: name,
       values: data.map(function(d) {
@@ -65,13 +65,13 @@ d3.csv("../datasets/top_new_end.csv", function(error, data) {
   //x.domain(d3.extent(data, function(d) { return d.date; }));
 
   y3.domain([
-    d3.min(cities, function(c) { return d3.min(c.values, function(v) { return v.tweets; }); }),
-    d3.max(cities, function(c) { return d3.max(c.values, function(v) { return v.tweets; }); })
+    d3.min(cities3, function(c) { return d3.min(c.values, function(v) { return v.tweets; }); }),
+    d3.max(cities3, function(c) { return d3.max(c.values, function(v) { return v.tweets; }); })
   ]);
   svg3.selectAll("*").remove();
   //LEGEND
   var legend3 = svg3.selectAll('g')
-      .data(cities)
+      .data(cities3)
       .enter()
     .append('g')
       .attr('class', 'legend');
@@ -94,7 +94,7 @@ d3.csv("../datasets/top_new_end.csv", function(error, data) {
   legend3
   		.on("click",function(d){
   				//filter data		
-  				//filterData[d.name]=!filterData[d.name];
+  				//filterData3[d.name]=!filterData3[d.name];
   				reDraw3(d.name);
     });
  
@@ -114,23 +114,23 @@ d3.csv("../datasets/top_new_end.csv", function(error, data) {
       .style("text-anchor", "end")
       .text("Número de tweets");
    
-  var boo3=cities.filter(function(d){return filterData[d.name]==true;});
+  var boo3=cities3.filter(function(d){return filterData3[d.name]==true;});
   console.log("filter");
   console.log(boo3);
   
   var city3 = svg3.selectAll(".city")
-      .data(cities.filter(function(d){return filterData[d.name]==true;})) //.filter(function(d){return filterData[d.name]==true;})
+      .data(cities3.filter(function(d){return filterData3[d.name]==true;})) //.filter(function(d){return filterData3[d.name]==true;})
       .enter().append("g");
     //  .attr("class", "city");
       
      console.log(city3);  
       svg3.selectAll(".city")
-      .data(cities.filter(function(d){return filterData[d.name]==true;}))//.filter(function(d){return filterData[d.name]==true;})
+      .data(cities3.filter(function(d){return filterData3[d.name]==true;}))//.filter(function(d){return filterData3[d.name]==true;})
       .append("g")
       .attr("class", "city");
       
       svg3.selectAll(".city")
-      .data(cities.filter(function(d){return filterData[d.name]==true;}))
+      .data(cities3.filter(function(d){return filterData3[d.name]==true;}))
       .exit()
       .remove();
   
@@ -146,17 +146,17 @@ d3.csv("../datasets/top_new_end.csv", function(error, data) {
       .attr("dy", ".35em")
       // .text(function(d) { return d.name; });
     svg3.selectAll(".city")
-      .data(cities.filter(function(d){return filterData[d.name]==true;}))
+      .data(cities3.filter(function(d){return filterData3[d.name]==true;}))
       .exit()
       .remove();
 });
 }
-console.log(filterData);
-drawChart3(filterData);
+console.log(filterData3);
+drawChart3(filterData3);
 function reDraw3(name){
 	
-	filterData[name]=!filterData[name];
+	filterData3[name]=!filterData3[name];
 	console.log("redraw :");
-	console.log(filterData);
-	drawChart(filterData);
+	console.log(filterData3);
+	drawChart3(filterData3);
 }

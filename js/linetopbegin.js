@@ -33,10 +33,10 @@ var svg2 = d3.select("body").append("svg")
 
   
       
-// var filterData={"RealMadrid":true,"NFL":true,"Palmeiras":true};//cities to be shown
-var filterData={"NFL":true,"Barcelona":true,"PSG":true,"NBA":true,"RealMadrid":true,"ChampionsLeague":true,"Peru":true,"UCL":true,"PSGCEL":true,"F1":true};
+// var filterData2={"RealMadrid":true,"NFL":true,"Palmeiras":true};//cities2 to be shown
+var filterData2={"NFL":true,"Barcelona":true,"PSG":true,"NBA":true,"RealMadrid":true,"ChampionsLeague":true,"Peru":true,"UCL":true,"PSGCEL":true,"F1":true};
 
-function drawChart2(filterData){
+function drawChart2(filterData2){
 d3.csv("../datasets/top_new_begin.csv", function(error, data) {
   color2.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
 
@@ -44,14 +44,14 @@ d3.csv("../datasets/top_new_begin.csv", function(error, data) {
   //   d.date = parseDate(d.date);
   // });
 
-  var dtgFormat = d3.time.format.utc("%Y-%m-%dT%H:%M:%S");
+  var dtgFormat2 = d3.time.format.utc("%Y-%m-%dT%H:%M:%S");
   data.forEach(function(d){
-    d.date = dtgFormat.parse(d.date.substr(0,19));
+    d.date = dtgFormat2.parse(d.date.substr(0,19));
   });
      
   console.log(data);
 
-  var cities = color2.domain().map(function(name) {
+  var cities2 = color2.domain().map(function(name) {
     return {
       name: name,
       values: data.map(function(d) {
@@ -65,13 +65,13 @@ d3.csv("../datasets/top_new_begin.csv", function(error, data) {
   //x.domain(d3.extent(data, function(d) { return d.date; }));
 
   y2.domain([
-    d3.min(cities, function(c) { return d3.min(c.values, function(v) { return v.tweets; }); }),
-    d3.max(cities, function(c) { return d3.max(c.values, function(v) { return v.tweets; }); })
+    d3.min(cities2, function(c) { return d3.min(c.values, function(v) { return v.tweets; }); }),
+    d3.max(cities2, function(c) { return d3.max(c.values, function(v) { return v.tweets; }); })
   ]);
   svg2.selectAll("*").remove();
   //LEGEND
   var legend2 = svg2.selectAll('g')
-      .data(cities)
+      .data(cities2)
       .enter()
     .append('g')
       .attr('class', 'legend');
@@ -94,7 +94,7 @@ d3.csv("../datasets/top_new_begin.csv", function(error, data) {
   legend2
   		.on("click",function(d){
   				//filter data		
-  				//filterData[d.name]=!filterData[d.name];
+  				//filterData2[d.name]=!filterData2[d.name];
   				reDraw2(d.name);
     });
  
@@ -114,23 +114,23 @@ d3.csv("../datasets/top_new_begin.csv", function(error, data) {
       .style("text-anchor", "end")
       .text("Número de tweets");
    
-  var boo2=cities.filter(function(d){return filterData[d.name]==true;});
+  var boo2=cities2.filter(function(d){return filterData2[d.name]==true;});
   console.log("filter");
   console.log(boo2);
   
   var city2 = svg2.selectAll(".city")
-      .data(cities.filter(function(d){return filterData[d.name]==true;})) //.filter(function(d){return filterData[d.name]==true;})
+      .data(cities2.filter(function(d){return filterData2[d.name]==true;})) //.filter(function(d){return filterData2[d.name]==true;})
       .enter().append("g");
     //  .attr("class", "city");
       
      console.log(city2);  
       svg2.selectAll(".city")
-      .data(cities.filter(function(d){return filterData[d.name]==true;}))//.filter(function(d){return filterData[d.name]==true;})
+      .data(cities2.filter(function(d){return filterData2[d.name]==true;}))//.filter(function(d){return filterData2[d.name]==true;})
       .append("g")
       .attr("class", "city");
       
       svg2.selectAll(".city")
-      .data(cities.filter(function(d){return filterData[d.name]==true;}))
+      .data(cities2.filter(function(d){return filterData2[d.name]==true;}))
       .exit()
       .remove();
   
@@ -146,17 +146,17 @@ d3.csv("../datasets/top_new_begin.csv", function(error, data) {
       .attr("dy", ".35em")
       // .text(function(d) { return d.name; });
     svg2.selectAll(".city")
-      .data(cities.filter(function(d){return filterData[d.name]==true;}))
+      .data(cities2.filter(function(d){return filterData2[d.name]==true;}))
       .exit()
       .remove();
 });
 }
-console.log(filterData);
-drawChart2(filterData);
+console.log(filterData2);
+drawChart2(filterData2);
 function reDraw2(name){
 	
-	filterData[name]=!filterData[name];
+	filterData2[name]=!filterData2[name];
 	console.log("redraw :");
-	console.log(filterData);
-	drawChart(filterData);
+	console.log(filterData2);
+	drawChart2(filterData2);
 }
