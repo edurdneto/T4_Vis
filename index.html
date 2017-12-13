@@ -73,9 +73,6 @@
 
 </head>
 
-
-</head>
-
 <body>
 
 	<nav id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -133,8 +130,8 @@
 					<ul>
 						<li>Lista com 100 hashtags relacionadas a eventos esportivos <br />
 						Exemplos: <i>Football, RealMadrid, F1, Flamengo, Palmeiras, etc.</i> </li>
-						<li>Coleta de mais de 7GB de dados do twitter entre 01/nov/2017 e 10/dez/2017</li>
-						<li>Dados temporais foram implementados com base na teoria da sedimentação</li>
+						<li>Coleta de mais de 7GB de dados do twitter entre 16/nov/2017 e 11/dez/2017</li>
+						<li>Dados temporais foram implementados utilizando VisualSedimentation.js</li>
 
 					</ul>
 					
@@ -162,10 +159,16 @@
 <!-- 								</div> -->
 <!-- 									<script type="text/javascript" src="helloWorld.js"></script> -->
 <!-- 							</td> -->
-							<td><img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png"></td>
+							<td><img src="https://realpython.com/learn/python-first-steps/images/pythonlogo.jpg" width="250px;"></td>
 							<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTlbJyQLvpPZP4oPyrCnbxSQgszQz8CvRvj7o0e7E5B3fbnWwG"></td>
-							<td><img src="https://www.creative-tim.com/assets/icon-bootstrap-7cec419b71f47386f443bd3fbfef2f7c.jpg"></td>
+							<td><img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png"></td>
 							<td><img src="http://www.webopixel.net/blog/wp-content/uploads/2014/04/d3-icon.png"></td>
+<!-- 							<td><img src="https://www.creative-tim.com/assets/icon-bootstrap-7cec419b71f47386f443bd3fbfef2f7c.jpg"></td> -->
+						</tr>
+						<tr>
+							<td colspan="2"><img src="../img/visual.png" style="width:400px; "/></td>
+							<td colspan="2"><img src="https://www.highcharts.com/media/templates/highsoft_2015/images/logo.svg"></td>
+					
 						</tr>
 					</table>
 
@@ -176,68 +179,26 @@
 		<div class="featurette" id="Conclusoes">
 		<h2 class="featurette-heading">Conclus&otilde;es </h2>
 			<h3>
-			   <span class="lead">
+			   <span class="lead" style="font-size: 32px; ">
 					<ul>
-						<li>Coleta de Dados</li>
-						<li>Falta de padrão nos dados</li>
-						<li>Dados incompletos - sem localização</li>
+						<li>Iniciar um projeto sem dados é bastante desafiador</li>
+						<li>Muitos dados implica em muito overhead de tempo</li>
+						<li>Dados coletados: despadronizados e/ou incompletos</li>
+						<li>Atenção maior a disponibilidade do serviço de coleta</li>
+						<li>MongoDB se demonstrou eficiente</li>
+						<li>VisualSedimentation.js se adequou bem a proposta do trabalho</li>
+						<li>Sedimentação em mapa como proposta de trabalho futuro</li>
 					</ul>
 			   </span>
 			</h3>
 		</div>
 
-	   <hr class="featurette-divider">
-
-		<div class="featurette" id="Top10">
-			<h2 class="featurette-heading">Top 10 Trend Topics </h2>
-			<h3>
-				  <span class="lead">
-					No contexto atual do crescente uso de redes sociais, o Twitter se caracteriza por
-					ser uma das mais famosas e utilizadas redes sociais ao redor do mundo. Nas publicações, os usuários dispõem de 140 caracteres para se comunicar, informar ou
-					simplesmente emitir opiniões acerca dos mais variados assuntos. Nesse contexto,
-					surgem os trending topics, que são os conjuntos de caracteres que evidenciam os
-					assuntos e fatos mais comentados do momento. Um dos assuntos que mais geram trending topics são os eventos esportivos, devido a sua adesão e relevância
-					a nível mundial. Dessa forma, este projeto tem como objetivo propor uma
-					análise de trending topics, por meio da utilização de técnicas de visualização, considerando dados espaço-temporais provenientes dos usuários do Twitter.
-				  </span>
-			</h3>
-				  <span class="lead">
-					   <ul>
-						   <li><a href="Top10Dinamic.html">Top 10 pelo tempo</a></li>
-						   <li><a href="lineTop10.html">Gráfico de Linha - Talvez coloquemos junto com o de barra logo</li>
-					   </ul>
-				  </span>
-		</div>
-
-
-
 		<hr class="featurette-divider">
-
-		<div class="featurette" id="texto-mapa">
-			<h2 class="featurette-heading">Análise dos tweets geograficamente </h2>
-			<h3>
-			   <span class="lead">
-				 Com o objetivo de análisar geograficamente as principais Trend Topics geramos dois gráficos de mapa.
-				 O primeiro tem como objetivo mostrar os países que mais contribuiram com tweets que ultilizaram a hashtag mais
-				 popular entre as datas x e y. O segundo por sua vez procura mostrar o surgimento dos tweets que ultilizaram uma das
-				 dez mais comentadas hashtags no decorrer do período.
-
-			   </p></span>
-			</h3>
-			<span class="lead">
-				 <ul>
-					 <li>Abrir um mapa dinâmico em uma outra pagina</li>
-					 <li>Adicionar Grafico de mapa estatico da top 1 hashtag</li>
-				 </ul>
-			</span>
-
-		</div>
-
 
 		<footer>
 			<div class="row">
 				<div class="col-lg-12">
-					<p>Copyright &copy; Your Website 2014</p>
+					<p>Copyright &copy; T4 - Sports 2017</p>
 				</div>
 			</div>
 		</footer>

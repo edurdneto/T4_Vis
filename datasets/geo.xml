@@ -23,7 +23,7 @@
 	<tweet id="311">
 		<hashtag>MEX</hashtag>
 		<date>Sun Dec 3 00:24:41 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>	
 	<tweet id="359">
 		<hashtag>USA</hashtag>
@@ -38,7 +38,7 @@
 	<tweet id="465">
 		<hashtag>USA</hashtag>
 		<date>Sun Dec 3 00:37:42 +0000 2017</date>
-		<size>1</size>
+		<size>3</size>
 	</tweet>
 	<tweet id="573">
 		<hashtag>USA</hashtag>
@@ -53,7 +53,7 @@
 	<tweet id="760">
 		<hashtag>CAN</hashtag>
 		<date>Sun Dec 3 01:00:02 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="918">
 		<hashtag>MEX</hashtag>
@@ -75,7 +75,7 @@
 		<date>Sun Dec 3 01:25:10 +0000 2017</date>
 		<size>1</size>
 	</tweet>
-<tweet id="1472">
+	<tweet id="1472">
 		<hashtag>GBR</hashtag>
 		<date>Sun Dec 3 01:36:16 +0000 2017</date>
 		<size>2</size>
@@ -108,7 +108,7 @@
 	<tweet id="2481">
 		<hashtag>MEX</hashtag>
 		<date>Sun Dec 3 02:29:58 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="2655">
 		<hashtag>USA</hashtag>
@@ -143,7 +143,7 @@
 	<tweet id="3971">
 		<hashtag>CAN</hashtag>
 		<date>Sun Dec 3 03:59:08 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="4135">
 		<hashtag>USA</hashtag>
@@ -208,7 +208,7 @@
 	<tweet id="6209">
 		<hashtag>CAN</hashtag>
 		<date>Sun Dec 3 09:13:23 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="6321">
 		<hashtag>USA</hashtag>
@@ -278,7 +278,7 @@
 	<tweet id="7659">
 		<hashtag>MEX</hashtag>
 		<date>Sun Dec 3 14:03:00 +0000 2017</date>
-		<size>3</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="7672">
 		<hashtag>AUS</hashtag>
@@ -298,7 +298,7 @@
 	<tweet id="8022">
 		<hashtag>MEX</hashtag>
 		<date>Sun Dec 3 14:41:12 +0000 2017</date>
-		<size>4</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="8155">
 		<hashtag>AUS</hashtag>
@@ -323,7 +323,7 @@
 	<tweet id="8593">
 		<hashtag>GBR</hashtag>
 		<date>Sun Dec 3 15:39:46 +0000 2017</date>
-		<size>3</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="8718">
 		<hashtag>USA</hashtag>
@@ -378,7 +378,7 @@
 	<tweet id="10348">
 		<hashtag>MEX</hashtag>
 		<date>Sun Dec 3 18:28:16 +0000 2017</date>
-		<size>3</size>
+		<size>2</size>
 	</tweet>
 	<tweet id="10503">
 		<hashtag>USA</hashtag>
@@ -388,12 +388,12 @@
 	<tweet id="10636">
 		<hashtag>MEX</hashtag>
 		<date>Sun Dec 3 18:59:20 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="10806">
 		<hashtag>CAN</hashtag>
 		<date>Sun Dec 3 19:14:12 +0000 2017</date>
-		<size>3</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="10957">
 		<hashtag>USA</hashtag>
@@ -413,12 +413,12 @@
 	<tweet id="11557">
 		<hashtag>GBR</hashtag>
 		<date>Sun Dec 3 20:21:33 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="11828">
 		<hashtag>CAN</hashtag>
 		<date>Sun Dec 3 20:50:09 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="11836">
 		<hashtag>USA</hashtag>
@@ -448,7 +448,7 @@
 	<tweet id="12590">
 		<hashtag>CAN</hashtag>
 		<date>Sun Dec 3 22:15:57 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="12748">
 		<hashtag>AUS</hashtag>
@@ -463,7 +463,7 @@
 	<tweet id="12922">
 		<hashtag>AUS</hashtag>
 		<date>Sun Dec 3 22:49:32 +0000 2017</date>
-		<size>3</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="13046">
 		<hashtag>USA</hashtag>
@@ -513,7 +513,7 @@
 	<tweet id="23310">
 		<hashtag>CAN</hashtag>
 		<date>Mon Dec 4 00:56:56 +0000 2017</date>
-		<size>3</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="23318">
 		<hashtag>USA</hashtag>
@@ -558,7 +558,7 @@
 	<tweet id="24432">
 		<hashtag>CAN</hashtag>
 		<date>Mon Dec 4 02:19:17 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="24591">
 		<hashtag>AUS</hashtag>
@@ -628,12 +628,12 @@
 	<tweet id="26109">
 		<hashtag>CAN</hashtag>
 		<date>Mon Dec 4 04:35:31 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="26255">
 		<hashtag>MEX</hashtag>
 		<date>Mon Dec 4 04:47:49 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="26409">
 		<hashtag>USA</hashtag>
@@ -699,7 +699,7 @@
 	<tweet id="27796">
 		<hashtag>MEX</hashtag>
 		<date>Mon Dec 4 11:42:42 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="27951">
 		<hashtag>USA</hashtag>
@@ -754,7 +754,7 @@
 	<tweet id="30524">
 		<hashtag>GBR</hashtag>
 		<date>Mon Dec 4 14:30:10 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="30665">
 		<hashtag>USA</hashtag>
@@ -784,7 +784,7 @@
 	<tweet id="31412">
 		<hashtag>CAN</hashtag>
 		<date>Mon Dec 4 15:25:32 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="31514">
 		<hashtag>MEX</hashtag>
@@ -889,12 +889,12 @@
 	<tweet id="34358">
 		<hashtag>CAN</hashtag>
 		<date>Mon Dec 4 18:18:09 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="34520">
 		<hashtag>MEX</hashtag>
 		<date>Mon Dec 4 18:30:04 +0000 2017</date>
-		<size>3</size>
+		<size>2</size>
 	</tweet>
 	<tweet id="34674">
 		<hashtag>USA</hashtag>
@@ -939,7 +939,7 @@
 	<tweet id="35716">
 		<hashtag>MEX</hashtag>
 		<date>Mon Dec 4 20:02:41 +0000 2017</date>
-		<size>4</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="35887">
 		<hashtag>MEX</hashtag>
@@ -1034,17 +1034,17 @@
 	<tweet id="38166">
 		<hashtag>AUS</hashtag>
 		<date>Mon Dec 4 23:01:24 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="38291">
 		<hashtag>CAN</hashtag>
 		<date>Mon Dec 4 23:12:35 +0000 2017</date>
-		<size>3</size>
+		<size>2</size>
 	</tweet>
 	<tweet id="38337">
 		<hashtag>AUS</hashtag>
 		<date>Mon Dec 4 23:18:08 +0000 2017</date>
-		<size>2</size>
+		<size>1</size>
 	</tweet>
 	<tweet id="38466">
 		<hashtag>USA</hashtag>
@@ -1059,12 +1059,12 @@
 	<tweet id="38645">
 		<hashtag>AUS</hashtag>
 		<date>Mon Dec 4 23:49:26 +0000 2017</date>
-		<size>3</size>
+		<size>2</size>
 	</tweet>
 	<tweet id="38728">
 		<hashtag>MEX</hashtag>
 		<date>Mon Dec 4 23:57:18 +0000 2017</date>
-		<size>4</size>
+		<size>2</size>
 	</tweet>
 </tweets>
 	

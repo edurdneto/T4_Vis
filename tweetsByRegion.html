@@ -52,6 +52,9 @@
 				var path = d3.geo.path()
 				  .projection(projection);
 				return {path: path, projection: projection};
+			},
+			fills: {
+			    defaultFill: "#dddddd"
 			}
 		});
 		
@@ -169,7 +172,7 @@
 							size:{original:15,minimum:1}
 						},
 						suspension:{
-							decay:{power:1.005}
+							decay:{power:1.003}
 						}
 					},
 					aggregation:{
@@ -286,7 +289,7 @@
 								x:400,
 								y:200,
 								t:dt,
-								fill: "#ff0000",
+								fillStyle: "#4682b4",
 								category: cat,
 								size: token_scale(parseInt(d3.select(d).select("size")[0][0].textContent)),
 							}); 
