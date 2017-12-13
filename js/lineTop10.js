@@ -39,7 +39,7 @@ var svg = d3.select("body").append("svg")
 var filterData={"NFL":true,"Barcelona":true,"PSG":true,"NBA":true,"RealMadrid":true,"ChampionsLeague":true,"Peru":true,"UCL":true,"PSGCEL":true,"F1":true};
 
 function drawChart(filterData){
-d3.csv("../datasets/top2.csv", function(error, data) {
+d3.csv("../datasets/top_new.csv", function(error, data) {
   color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
 
   // data.forEach(function(d) {
